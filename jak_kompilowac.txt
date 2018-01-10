@@ -1,0 +1,5 @@
+JAK KOMPILOWAC I URUCHAMIAC
+
+mpicc.mpich2 -std=c99 main.c testFun.c jacobi.c richardson.c -o program -lm
+mpiexec -np 4 ./program
+
